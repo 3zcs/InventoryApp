@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected List<Product> doInBackground(Void... voids) {
             if (cursor.moveToFirst())
-                while (cursor.moveToNext()) {
+                do {
                     products.add(new Product(
                             cursor.getString(cursor.getColumnIndex(InventoryContract.InventoryEntry._ID)),
                             cursor.getString(cursor.getColumnIndex(InventoryContract.InventoryEntry.COLUMN_NAME)),
@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                             cursor.getString(cursor.getColumnIndex(InventoryContract.InventoryEntry.COLUMN_IMAGE)),
                             cursor.getString(cursor.getColumnIndex(InventoryContract.InventoryEntry.COLUMN_SUPPLIER))));
                 }
+                while (cursor.moveToNext());
             return products;
         }
 
