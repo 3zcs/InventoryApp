@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="name">Product Name</string>
+    <string name="price">Product Price</string>
+    <string name="quantity">Product Quantity</string>
+    <string name="supplier">Product Supplier</string>
+    <string name="image">Product Image</string>
+    <string name="save">Save</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="empty">Please check this field</string>
+    <string name="added">Product stressful stored</string>
+    <string name="not_stored">Product not stored</string>
+    <string name="buy">Buy</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="order">New Order</string>
+    <string name="no_item">There is no item</string>
+    <string name="confirm_msg">You will delete this product</string>
+</resources>
